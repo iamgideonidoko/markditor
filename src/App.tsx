@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MainLayout from './components/MainLayout';
 
-const App = () => {
+function App() {
   return (
-    <div>Markditor is going to be the best editor</div>
-  )
+    <div>
+      <MainLayout />
+    </div>
+  );
 }
 
 export default App;

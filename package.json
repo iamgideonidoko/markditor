@@ -9,11 +9,13 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx} --max-warnings=0",
+    "lint-fix": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": {
-    "name": "Ahmed Path",
+    "name": "Gideon Idoko",
     "email": "iamgideonidoko@gmail.com"
   },
   "license": "MIT",
@@ -80,9 +82,20 @@
     "css-loader": "^6.0.0",
     "electron": "19.0.1",
     "eslint": "^8.0.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "fork-ts-checker-webpack-plugin": "^6.0.1",
+    "husky": "^8.0.1",
     "node-loader": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
+    "sass-loader": "^13.0.0",
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.2",
     "typescript": "~4.5.4"
