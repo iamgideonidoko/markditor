@@ -3,11 +3,7 @@ import MainLayout from './components/MainLayout';
 import './index.scss';
 
 function App() {
-    return (
-        <div>
-            <MainLayout />
-        </div>
-    );
+    return <MainLayout />;
 }
 
 export default App;

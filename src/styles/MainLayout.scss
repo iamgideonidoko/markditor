@@ -1,0 +1,21 @@
+.main-layout-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20rem 6px auto;
+
+    .drag-area {
+        cursor: ew-resize;
+        background-color: black;    }
+
+    aside:first-child {
+        border: 1px solid red;
+        overflow: auto;
+    }
+}
+
+.main-section {
+    overflow: auto;
+}
+
