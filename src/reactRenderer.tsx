@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 
 function render() {
-  ReactDOM.render(<App />, document.querySelector('#app'));
+    ReactDOM.render(<App />, document.querySelector('#app'));
 }
 
 render();
