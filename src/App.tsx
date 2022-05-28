@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>Markditor Application</div>
+    <div>Markditor is going to be the best editor</div>
   )
 }
 
