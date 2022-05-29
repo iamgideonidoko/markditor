@@ -3,7 +3,24 @@ const plugins = require('./webpack.plugins');
 
 rules.push({
   test: /\.(scss|css)$/,
-  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+  use: [
+    'style-loader',
+    'css-loader',
+    'sass-loader'
+  ],
+});
+
+rules.push( {
+  test: /\.svg$/,
+  use: [
+    {
+      loader: 'svg-url-loader',
+      options: {
+        limit: 10000,
+      },
+    },
+    '@svgr/webpack'
+  ],
 });
 
 module.exports = {

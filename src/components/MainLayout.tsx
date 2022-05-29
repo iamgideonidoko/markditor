@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useRef, useState, MouseEvent } from 'react';
 import '../styles/MainLayout.scss';
+import EditorBox from './EditorBox';
 
 function MainLayout() {
     const [isDragging, setIsDragging] = useState(false);
@@ -33,9 +34,7 @@ function MainLayout() {
             <aside ref={aside}>Navbar</aside>
             <div role="grid" className="drag-area" onMouseDown={startDrag} />
             <div className="main-section" ref={mainSection}>
-                Main section Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis neque at dicta repellat
-                asperiores, recusandae, vero quidem amet, atque libero officia tempore dolorum assumenda animi odio
-                quasi aliquid. Corporis, expedita.
+                <EditorBox />
             </div>
         </div>
     );
