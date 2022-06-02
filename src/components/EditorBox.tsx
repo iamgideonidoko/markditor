@@ -1,18 +1,15 @@
 import React from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-// import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-// import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
-// import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-// import Markdown from '@ckeditor/ckeditor5-markdown-gfm/src/markdown';
+import MarkditorEditor from '../lib/markditor-editor/markditor-editor';
 
 function EditorBox() {
     return (
         <CKEditor
-            editor={ClassicEditor}
+            editor={MarkditorEditor}
             config={
                 {
-                    // plugins: [Markdown],
+                    // plugins: [Essentials, Paragraph, Bold, Italic],
+                    // toolbar: ['bold', 'italic'],
                 }
             }
             data="<p>Hello from CKEditor 5!</p>"

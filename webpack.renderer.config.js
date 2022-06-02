@@ -2,7 +2,7 @@ const rules = require('./webpack.rules');
 const plugins = require('./webpack.plugins');
 
 rules.push({
-  test: /\.(scss|css)$/,
+  test: /\.(css|scss)$/,
   use: [
     'style-loader',
     'css-loader',
@@ -19,7 +19,7 @@ rules.push( {
         limit: 10000,
       },
     },
-    '@svgr/webpack'
+    '@svgr/webpack',
   ],
 });
 
