@@ -1,5 +1,6 @@
 node_modules
 src/lib
+src/typings
 webpack.main.config.js
 webpack.plugins.js
 webpack.renderer.config.js
