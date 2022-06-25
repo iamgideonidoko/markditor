@@ -107,6 +107,8 @@
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^5.0.2",
     "@ckeditor/ckeditor5-utils": "^34.1.0",
+    "@electron/remote": "^2.0.8",
+    "@treverix/custom-electron-titlebar": "^4.2.0",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
