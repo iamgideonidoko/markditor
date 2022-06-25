@@ -93,7 +93,7 @@
     /* -- Overrides the default .ck-toolbar class colors. --------------------------------------- */
 
     --ck-color-toolbar-background: var(--ck-custom-background);
-    --ck-color-toolbar-border: var(--ck-custom-border);
+    --ck-color-toolbar-border: transparent;
 
     /* -- Overrides the default .ck-tooltip class colors. --------------------------------------- */
 
@@ -126,11 +126,11 @@
 
     & > div:nth-of-type(1) {
         & .ck.ck-sticky-panel {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid var(--secondary-bg-color);
         }
         & .ck.ck-toolbar {
             border-width: 0px;
-            border-color: black;
+            border-color: var(--secondary-bg-color) !important;
             border-radius: 10px !important;
             -webkit-border-radius: 10px !important;
             -moz-border-radius: 10px !important;

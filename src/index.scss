@@ -12,11 +12,16 @@
   font-family: var(--primary-font) !important;
 }
 
+:root {
+  --titlebar-height: 35px;
+}
+
 body, #app {
   height: 100vh;
   width: 100vw;
   background-color: var(--primary-bg-color);
   color: white !important;
+  position: relative;
 }
 
 /* width */

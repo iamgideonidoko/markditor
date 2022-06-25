@@ -1,12 +1,15 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/role-supports-aria-props */
 import React from 'react';
+import { handleAppMinimize, handleAppMaximize, handleAppClose } from '../helper';
 import '../styles/WinTitlebar.scss';
 
 function WinTitlebar() {
     return (
         <div
-            className="titlebar cet-windows light"
-            style={{ backgroundColor: 'rgb(236, 236, 236)', color: 'rgb(51, 51, 51)', height: '30px' }}
+            className="titlebar cet-windows"
+            style={{ backgroundColor: 'var(--primary-bg-color)', color: 'white', height: 'var(--titlebar-height)' }}
         >
             <div className="titlebar-drag-region" />
             <div className="menubar" role="menubar">
@@ -71,13 +74,16 @@ function WinTitlebar() {
             </div>
             <div className="window-controls-container">
                 <div className="window-icon-bg">
-                    <div className="window-icon window-minimize" />
+                    <div className="window-icon window-minimize" onClick={() => handleAppMinimize()} />
                 </div>
                 <div className="window-icon-bg">
-                    <div className="window-icon window-max-restore window-unmaximize" />
+                    <div
+                        className="window-icon window-max-restore window-unmaximize"
+                        onClick={() => handleAppMaximize()}
+                    />
                 </div>
                 <div className="window-icon-bg window-close-bg">
-                    <div className="window-icon window-close" />
+                    <div className="window-icon window-close" onClick={() => handleAppClose()} />
                 </div>
             </div>
             <div className="resizer top" aria-hidden="true" style={{ display: 'none' }} />

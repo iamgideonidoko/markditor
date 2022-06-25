@@ -1,17 +1,24 @@
 .main-layout-wrapper {
-    height: 100%;
+    height: calc(100% - var(--titlebar-height));
     width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 20rem 6px auto;
+    transform: translateY(var(--titlebar-height));
+    -webkit-transform: translateY(var(--titlebar-height));
+    -moz-transform: translateY(var(--titlebar-height));
+    -ms-transform: translateY(var(--titlebar-height));
+    -o-transform: translateY(var(--titlebar-height));
 
     .drag-area {
         cursor: ew-resize;
-        background-color: black;    }
+        background-color: var(--secondary-bg-color);
+    }
 
     aside:first-child {
         overflow: auto;
         background-color: var(--secondary-bg-color);
+        -webkit-user-select: none;
     }
 }
 
@@ -19,4 +26,3 @@
     overflow: auto;
     overflow-x: hidden;
 }
-
