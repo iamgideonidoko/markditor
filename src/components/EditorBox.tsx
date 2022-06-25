@@ -1,6 +1,7 @@
 import React from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import MarkditorEditor from '../lib/markditor-editor/markditor-editor';
+import '../styles/EditorTheme.scss';
 
 function EditorBox() {
     return (

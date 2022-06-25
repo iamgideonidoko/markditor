@@ -1,12 +1,40 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito/Nunito-Regular.ttf");
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--primary-font) !important;
 }
 
-body {
+body, #app {
   height: 100vh;
   width: 100vw;
+  background-color: var(--primary-bg-color);
+  color: white !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2F333A;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
 }

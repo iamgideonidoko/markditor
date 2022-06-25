@@ -31,9 +31,9 @@ function MainLayout() {
 
     return (
         <div role="grid" onMouseMove={handleDrag} onMouseUp={endDrag} ref={wrapper} className="main-layout-wrapper">
-            <aside ref={aside}>Navbar</aside>
+            <aside ref={aside}>Sidebar</aside>
             <div role="grid" className="drag-area" onMouseDown={startDrag} />
-            <div className="main-section" ref={mainSection}>
+            <div className="main-section" id="main-section" ref={mainSection}>
                 <EditorBox />
             </div>
         </div>
