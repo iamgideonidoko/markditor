@@ -1297,11 +1297,6 @@
     global-agent "^3.0.0"
     global-tunnel-ng "^2.7.1"
 
-"@electron/remote@^2.0.1", "@electron/remote@^2.0.8":
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/@electron/remote/-/remote-2.0.8.tgz#85ff321f0490222993207106e2f720273bb1a5c3"
-  integrity sha512-P10v3+iFCIvEPeYzTWWGwwHmqWnjoh8RYnbtZAb3RlQefy4guagzIwcWtfftABIfm6JJTNQf4WPSKWZOpLmHXw==
-
 "@electron/universal@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@electron/universal/-/universal-1.2.1.tgz#3c2c4ff37063a4e9ab1e6ff57db0bc619bc82339"
@@ -1577,13 +1572,6 @@
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
-
-"@treverix/custom-electron-titlebar@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@treverix/custom-electron-titlebar/-/custom-electron-titlebar-4.2.0.tgz#252d37d510ca9ed7e409fedde85b3c0246bf5b59"
-  integrity sha512-spiCIz/YCuCZXtfrE2D+1dgvLgs9dEscRHJiCid22bdb8qNDnzdbwjz9IEsMEkjVV+DIpbDwP6Axd4x/mXmnWA==
-  dependencies:
-    "@electron/remote" "^2.0.1"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
